@@ -1,0 +1,20 @@
+Package: ridb
+Type: Package
+Title: Client for the Index Database of Remote Sensing Indices
+Description: Index Database (<http://www.indexdatabase.de/>) of remote 
+    sensing indices.
+Version: 0.0.1.9000
+Authors@R: c(person("Scott", "Chamberlain", role = c("aut", "cre"),
+    email = "myrmecocystus@gmail.com"))
+License: MIT + file LICENSE
+URL: https://github.com/ropenscilabs/ridb
+BugReports: https://github.com/ropenscilabs/ridb/issues
+Imports:
+    crul (>= 0.1.0),
+    xml2 (>= 1.0.0),
+    rvest (>= 0.3.2),
+    tibble (>= 1.2)
+Suggests:
+    roxygen2 (>= 5.0.1),
+    testthat
+RoxygenNote: 5.0.1
