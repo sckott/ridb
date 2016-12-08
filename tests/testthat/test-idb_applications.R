@@ -1,9 +1,9 @@
-context("idb_indices")
+context("idb_applications")
 
-test_that("idb_indices works", {
+test_that("idb_applications works", {
   skip_on_cran()
 
-  aa <- idb_indices()
+  aa <- idb_applications()
 
   expect_is(aa, "tbl_df")
   expect_is(aa, "data.frame")

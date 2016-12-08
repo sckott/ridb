@@ -22,11 +22,6 @@ as_html <- function(x) xml2::read_html(x, encoding = "UTF-8")
 
 get_table <- function(x) {
   tab <- rvest::html_table(as_html(x))[[1]]
-  tab <- stats::setNames(
-    tab,
-    c('no', 'name', 'abbreviation', 'formula', 'variables',
-      'source', 'no_sensors', 'no_applications', 'no_references')
-  )
   tibble::as_data_frame(tab)
   # table <- xml2::xml_find_first(x, "//table")[[1]]
   # trs <- xml2::xml_find_all(table, "//tr")[-1]
