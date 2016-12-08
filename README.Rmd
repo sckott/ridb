@@ -32,6 +32,19 @@ library("ridb")
 idb_indices()
 ```
 
+
+## list sensors
+
+```{r}
+idb_sensors()
+```
+
+## list applications
+
+```{r}
+idb_applications()
+```
+
 ## Meta
 
 * Please [report any issues or bugs](https://github.com/ropenscilabs/ridb/issues).
