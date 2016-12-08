@@ -1,3 +1,2 @@
-#' @param name (character) Binomial taxonomic name
-#' @param id (character) IUCN id
-#' @param region (character) Binomial taxonomic name
+#' @param ... curl options passed on to \code{\link[crul]{HttpClient}}
+#' @return a tibble

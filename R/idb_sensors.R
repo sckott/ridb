@@ -1,8 +1,7 @@
 #' List sensors
 #'
 #' @export
-#' @param ... curl options passed on to \code{\link[crul]{HttpClient}}
-#' @return a tibble
+#' @template commonargs
 #' @examples \dontrun{
 #' idb_sensors()
 #' }
