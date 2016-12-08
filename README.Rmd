@@ -1,5 +1,5 @@
-rbace
-=====
+ridb
+====
 
 ```{r echo=FALSE}
 knitr::opts_chunk$set(
@@ -10,50 +10,33 @@ knitr::opts_chunk$set(
 )
 ```
 
-[![Build Status](https://travis-ci.org/ropenscilabs/rbace.svg?branch=master)](https://travis-ci.org/ropenscilabs/rbace)
+[![Build Status](https://travis-ci.org/ropenscilabs/ridb.svg?branch=master)](https://travis-ci.org/ropenscilabs/ridb)
 
-* [BASE API docs][docs]
-* [BASE - request access][token]
-
-Data from BASE (Bielefeld Academic Search Engine) <https://www.base-search.net>
-
-[<img src="inst/img/BASE_search_engine_logo.svg.png" width="300">](https://www.base-search.net)
+`ridb` - and R client for the Index Database of remote sensing indices at <http://www.indexdatabase.de/>
 
 ## Install
 
 Development version
 
 ```{r eval=FALSE}
-devtools::install_github("ropenscilabs/rbace")
+devtools::install_github("ropenscilabs/ridb")
 ```
 
 ```{r}
-library("rbace")
+library("ridb")
 ```
 
-## search
-
-perform a search
+## list indices
 
 ```{r}
-(res <- bs_search(coll = 'it', query = 'dccreator:manghi', boost = "oa"))
+idb_indices()
 ```
-
-get the search metadata
-
-```{r}
-bs_meta(res)
-```
-
 
 ## Meta
 
-* Please [report any issues or bugs](https://github.com/ropenscilabs/rbace/issues).
+* Please [report any issues or bugs](https://github.com/ropenscilabs/ridb/issues).
 * License: MIT
-* Get citation information for `rbace` in R doing `citation(package = 'rbace')`
+* Get citation information for `ridb` in R doing `citation(package = 'ridb')`
 * Please note that this project is released with a [Contributor Code of Conduct](CONDUCT.md). By participating in this project you agree to abide by its terms.
 
 [![ropensci_footer](https://ropensci.org/public_images/github_footer.png)](https://ropensci.org)
-
-[docs]: https://www.base-search.net/about/download/base_interface.pdf
-[token]: https://www.base-search.net/about/en/contact.php
