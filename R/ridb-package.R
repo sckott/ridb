@@ -5,4 +5,5 @@
 #' @docType package
 #' @keywords package
 #' @author Scott Chamberlain \email{myrmecocystus@@gmail.com}
+#' @author David LeBauer \email{dlebauer@@gmail.com}
 NULL

@@ -10,6 +10,8 @@ ridb - Index Database R client
 }
 \author{
 Scott Chamberlain \email{myrmecocystus@gmail.com}
+
+David LeBauer \email{dlebauer@gmail.com}
 }
 \keyword{package}
 
