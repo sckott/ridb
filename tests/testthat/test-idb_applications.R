@@ -8,10 +8,9 @@ test_that("idb_applications works", {
   expect_is(aa, "tbl_df")
   expect_is(aa, "data.frame")
   expect_type(aa$no, "integer")
-  expect_type(aa$abbreviation, "character")
-  expect_type(aa$formula, "character")
-  expect_true(any(grepl("InvisibleTimes", aa$formula)))
+  expect_type(aa$name, "character")
+  expect_type(aa$no_indices, "integer")
   expect_equal(colnames(aa),
-               c("no", "name", "abbreviation", "formula", "variables", "source",
-                 "no_sensors", "no_applications", "no_references"))
+               c("no", "name", "description", "no_indices",
+                 "no_sensors", "no_references"))
 })

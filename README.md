@@ -26,7 +26,7 @@ library("ridb")
 
 ```r
 idb_indices()
-#> # A tibble: 300 × 9
+#> # A tibble: 300 Ã— 9
 #>       no                                       name abbreviation
 #>    <int>                                      <chr>        <chr>
 #> 1      1      Adjusted transformed soil-adjusted VI       ATSAVI
@@ -50,7 +50,7 @@ idb_indices()
 
 ```r
 idb_sensors()
-#> # A tibble: 163 × 13
+#> # A tibble: 163 Ã— 13
 #>       no    name bands    spectrum spatial_resolution include
 #>    <int>   <chr> <int>       <chr>              <chr>   <dbl>
 #> 1      1   AAHIS     1     390-840                2-2      NA
@@ -73,7 +73,7 @@ idb_sensors()
 
 ```r
 idb_applications()
-#> # A tibble: 43 × 6
+#> # A tibble: 43 Ã— 6
 #>       no                                    name description no_indices
 #>    <int>                                   <chr>       <lgl>      <int>
 #> 1      1                             Agriculture          NA         22
